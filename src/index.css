@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f7ba;
+}
+
+.text-container h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #f01d9f; /* Text color */
+  text-shadow: 0 0 10px rgb(250, 157, 215); /* Initial shadow */
+  animation: textShadow 3s infinite alternate; /* Animation */
+}
+
+.text-container {
+  position: relative;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.text-container h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #f01d9f; /* Text color */
+  text-shadow: 0 0 10px rgb(250, 157, 215); /* Initial shadow */
+  animation: textShadow 3s infinite alternate; /* Animation */
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0 0 10px rgb(234, 11, 148); /* Initial shadow */
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(250, 157, 215); /* Shadow with higher blur */
+  }
+}
